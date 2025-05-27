@@ -4,10 +4,6 @@ import { Skeleton } from '@/shared/components';
 const CocktailCardSkeleton = () => {
   return (
     <div className="cocktail-card skeleton-card">
-      <div className="image-container">
-        <Skeleton height="100%" className="image-skeleton" />
-      </div>
-
       <div className="cocktail-info">
         <Skeleton height="2rem" width="70%" className="title-skeleton" />
 
@@ -33,6 +29,9 @@ const CocktailCardSkeleton = () => {
             <Skeleton height="1rem" width="65%" className="ingredient-skeleton" />
           </div>
         </div>
+      </div>
+      <div className="image-container">
+        <Skeleton height="100%" className="image-skeleton" />
       </div>
     </div>
   );
